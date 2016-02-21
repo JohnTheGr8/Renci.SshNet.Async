@@ -6,7 +6,7 @@
     <title>$title$</title>
     <authors>$author$</authors>
     <owners>$author$</owners>
-    <licenseUrl>https://github.com/JohnTheGr8/Renci.SshNet.Async/blob/master/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/JohnTheGr8/Renci.SshNet.Async/blob/master/License</licenseUrl>
     <projectUrl>https://github.com/JohnTheGr8/Renci.SshNet.Async</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
