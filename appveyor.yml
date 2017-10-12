@@ -7,3 +7,6 @@ before_build:
 
 build:
   project: Renci.SshNet.Async.sln
+
+artifacts:
+  - path: '**\*.nupkg'
