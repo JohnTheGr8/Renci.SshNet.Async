@@ -10,3 +10,15 @@ build:
 
 artifacts:
   - path: '**\*.nupkg'
+
+environment:
+  my_variable:
+    
+
+deploy:
+  provider: NuGet
+  api_key:
+    secure: pz0I0jyd5/oGyB+1uOHl+Q+YA/5v4lRMOnUs4Xrx/8k2AWwxuTdkmU2mlYvWxSQp
+  artifact: /.*\.nupkg/
+  on:
+      appveyor_repo_tag: true
