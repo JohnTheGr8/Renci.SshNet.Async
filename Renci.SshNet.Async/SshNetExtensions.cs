@@ -70,7 +70,7 @@ namespace Renci.SshNet.Async
         /// that is used to schedule the task that executes the end method.</param>
         /// <returns></returns>
         public static Task DownloadAsync(this SftpClient client,
-            string path, Stream output, Action<ulong> downloadCallback = null,
+            string path, Stream output, Action<ulong> downloadCallback,
             TaskFactory factory = null,
             TaskCreationOptions creationOptions = default(TaskCreationOptions),
             TaskScheduler scheduler = null)
