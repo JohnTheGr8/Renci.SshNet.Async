@@ -1,8 +1,9 @@
 version: 1.2.{build}
 
-platform: Any CPU
-
-configuration: Release
+image: Visual Studio 2017
 
 before_build:
-  - nuget restore
+- cmd: nuget restore Renci.SshNet.Async.sln
+
+build:
+  project: Renci.SshNet.Async.sln
