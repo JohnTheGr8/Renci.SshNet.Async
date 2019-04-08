@@ -182,6 +182,7 @@ namespace Renci.SshNet.Async
         /// Asynchronously run a command.
         /// </summary>
         /// <param name="command">The <see cref="SshCommand"/> instance</param>
+        /// <param name="commandText">The command text to execute</param>
         /// <param name="factory">The <see cref="System.Threading.Tasks.TaskFactory">TaskFactory</see> used to create the Task</param>
         /// <param name="creationOptions">The TaskCreationOptions value that controls the behavior of the
         /// created <see cref="T:System.Threading.Tasks.Task">Task</see>.</param>
