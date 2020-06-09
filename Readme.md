@@ -1,4 +1,4 @@
-## Renci.SshNet.Async [![Build status](https://ci.appveyor.com/api/projects/status/wbusmehom3aub79y?svg=true)](https://ci.appveyor.com/project/JohnTheGr8/renci-sshnet-async) [![NuGet](https://img.shields.io/nuget/v/Renci.SshNet.Async.svg?style=flat)](https://www.nuget.org/packages/Renci.SshNet.Async)
+## Renci.SshNet.Async [![Build status](https://ci.appveyor.com/api/projects/status/wbusmehom3aub79y?svg=true)](https://ci.appveyor.com/project/JohnTheGr8/renci-sshnet-async) [![NuGet](https://img.shields.io/nuget/v/Renci.SshNet.Async.svg?style=flat)](https://www.nuget.org/packages/Renci.SshNet.Async) ![Nuget](https://img.shields.io/nuget/dt/Renci.SshNet.Async)
 
 #### About
 A collection of extensions for [SSH.NET](https://github.com/sshnet/SSH.NET/) that implement the `Task-based Asynchronous Pattern` from the originally implemented `Asynchronous Programming Model`
@@ -31,3 +31,13 @@ using (var localStream = File.OpenRead("path_to_local_file"))
 // disconnect like you normally would
 client.Disconnect();
 ```
+
+#### Supported Operations
+
+Not all operations expose async methods in the base library. The extension methods introduced by this library are listed below:
+
+- `SftpClient.ListDirectoryAsync`
+- `SftpClient.DownloadAsync`
+- `SftpClient.UploadAsync`
+- `SftpClient.SynchronizeDirectoriesAsync`
+- `SshCommand.ExecuteAsync`
